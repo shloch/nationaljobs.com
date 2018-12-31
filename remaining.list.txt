@@ -1,0 +1,89 @@
+-search job page>--------------------------yousilb27 (done)
+-contact us<-----------------------------------breezy (DONE)
+
+Enterprise
+	-job applicants list
+User
+	-See as visitor(permet de voir le profil comme visiteur) <------------breezy
+	-apply to a job <---------------------(done)
+	-generate CV <-----------------------breezy
+	-document-list page<-----------------yousilb
+	- list of jobs he applied for <---------yousilb
+	- share job <--------------breezy
+	- Education history <---------------yousilb
+	
+-form inside the popUp(mettre dans modal_div.css)<----------------------------breezy (DONE)
+
+ADmin
+	-verify user account type and activate it to "Enterprise" or "Member"<-------------------------breezy
+	
+	
+search job page
+	-when connected, just show the profile link to the left panel Fait
+	-default, load the last 20 jobs on the system
+	-make the form work
+		-use ajax
+		-use the pagination
+		
+		-create nlj javascript namespace Done
+		-put the js event on the search button Done
+		-put the error_contener on the top of the page Done
+		-send data to the controler Done
+		-create the validator Done
+		-add state and country fields to the database Done
+		-do the model function Done
+		-do the controler Done
+		-please, test the model search function first....Done, it doesn't work like i want, but it work
+		-return the result in jason format Done
+		-save result array in a js array object Done
+		-accompany breezy at tam tam Done
+		-came back, look football matches results Done
+		-clean my face with lemon Done
+		-sleep, sleep Done
+		-dream, dream Done
+		
+		-create the template using javascript and append to the page (insertBefore statement) Done
+		-look how it looks Done, it looks pretty fine
+		
+		-do the pagination: it will be like twitter and Ebonixe(the user can add result on the page, not override existing ones)
+		so it will be a for exemple 'More Result(Page 1 / 20)' button, next: 'More Result(Page 2 / 20)' .... 1H(end at 23h10) Done
+		-merge new result with the previous results Done(not sure if it works, we will see later ;) )
+		-fix the sql request problem Done
+		-fix the returned data problem Done		
+		-make the pagination works Done, but...
+			-fix the insertBefore probleme Done, i was stupid :D
+		-change the way my fetchers works: i take all, and i limit the result inside the loop. Exemple: for i=0 to 500 to take only 500 results Done
+		-fix the result numbers shown on the headline Done
+		-merge datas, it is important for the next step of the work Done
+		-fixe the stored data problem, it is very important, very important, because the filter will use stored data results, so...
+		call sihon and ask him how to do, or used 'cookies' FAIL
+		-try using another method
+			-div FAIL
+			-inputs FAIL
+		-work on the filter: the filter only react in the nlj.jobList array(just a demo first, when sihon will tell me how to use object
+		inside a cookie, i will fix this, so do like everything is OK ;)
+		-put back the the code to force js to be reloaded
+		-give to shey
+		
+		
+		Education history (reporter, faire dabord searchJobs)
+	-lien dans template2 Fait
+	-retirer du slider
+	-mettre le lien dans controler/login
+	-creer la vue dans editProfile/user/education.php
+	-creer le model 
+	-faire le validator 
+	-creer le controleur 
+	-modifier la vue 
+	-faire que la vue marche 
+Note: quand il y a des caracteres speciaux le tableau là ndem. exemple avec le caractere double quote: < " >
+Note: prendre en compte la pagination dans les "lister" et afficher aussi si necessaire la liste des pages
+
+
+----if payed ----
+custom 404 page
+re-work security
+SEO
+custom e-mailing page
+auto-completion on job search input fields
+newsletter for jobs alerts per search-query

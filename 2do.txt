@@ -1,0 +1,18 @@
+- put an image in front of the gender input (just like email input); do same for {select account type}
+- better style submit buttons
+- create 2 folders for edit profile ('personal' + 'organisation') in the view folder; and 'editProfile' subfolder
+   to differenciate their view pages
+-put script of editPersonal informations for 'personal' in a script file
+- change loading image (later)
+-remove {editing of user informations} and putting it in separate controllers; so we dont saturate the login controller
+ we'll have to create 2 controllers for that; one for {personal user infos} and another controller for {edit enterprise infos}
+-change design of {edit profile} menu links
+-the date picker design should be changed to gray (to match the site's design)
+-we should have another table listing "industry types"
+-(in time) load ALL member infos into session
+-comment on ALL controllers about what they do, on top
+- (AT THE END)-->convert all queies to Active records 
+
+
+
+///// download codes for "la voix des decideurs"

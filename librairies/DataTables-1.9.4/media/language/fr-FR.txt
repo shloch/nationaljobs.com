@@ -1,0 +1,17 @@
+{
+	"sProcessing": "Veuillez patienter SVP ...",
+	"sLengthMenu": "Afficher _MENU_ entrées",
+	"sZeroRecords": "Aucune entrée trouvée.",
+	"sInfo": "De _START_ à _END_ sur _TOTAL_ entrées",
+	"sInfoEmpty": "De 0 à 0 sur 0 entrées",
+	"sInfoFiltered": "(filtrés sur _MAX_  entrées au total)",
+	"sInfoPostFix": "",
+	"sSearch": "Rechercher",
+	"sUrl": "",
+	"oPaginate": {
+		"sFirst":    "Premier",
+		"sPrevious": "Préc",
+		"sNext":     "Suiv",
+		"sLast":     "Dernier"
+	}
+}

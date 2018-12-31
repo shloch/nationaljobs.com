@@ -1,0 +1,66 @@
+/* 
+    Document   : contactForm
+    Created on : 17 juin 2013, 00:22:17
+    Author     : @shloch, @yousilb
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/* 
+   TODO customize this sample style
+   Syntax recommendation http://www.w3.org/TR/REC-CSS2/
+*/
+
+
+label{
+    /*    display: block;
+        border: 1px solid red;
+        width: 30%;
+        float: left;*/
+}
+
+input[type='text']{
+    border: 1px solid #C0C0C0;
+     border-radius: 5px 5px 5px 5px;
+    -moz-border-radius: 5px 5px 5px 5px;
+    -webkit-border-radius: 5px 5px 5px 5px;
+    -o-border-radius: 5px 5px 5px 5px;
+    box-shadow: 0 0 10px rgba(192, 192, 192, 0.7), 0 0 7px rgba(192, 192, 192, 0.7);
+    height: 27px;
+    margin: 0 3px !important;
+    padding: 5px !important;
+    width: 55%;
+}
+
+textarea {
+    border: 1px solid #C0C0C0;
+     border-radius: 5px 5px 5px 5px;
+    -moz-border-radius: 5px 5px 5px 5px;
+    -webkit-border-radius: 5px 5px 5px 5px;
+    -o-border-radius: 5px 5px 5px 5px;
+    box-shadow: 0 0 10px rgba(192, 192, 192, 0.7), 0 0 7px rgba(192, 192, 192, 0.7);
+    height: 90px;
+    margin: 0 3px !important;
+    padding: 5px !important;
+    width: 55%;
+}
+
+
+input#submit {
+    /*    border: none;*/
+    /*    width: widthpx;
+        height: heightpx;*/
+    /*background: url(images/mybutton.png) no-repeat 0 0;*/
+    /*    margin: 0;
+        overflow: hidden;*/
+    /*padding: widthpx 0 0 heightpx;*/
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+    -webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+    text-shadow: 0 -1px 1px rgba(0,0,0,0.25);
+    cursor: pointer;
+    background-color: #2daebf;
+     padding: 2px 15px;
+    
+}

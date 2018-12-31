@@ -1,0 +1,210 @@
+<?php
+
+/*
+ * the WorkHistory page
+ */
+
+class WorkHistory extends CI_Controller {
+
+    function __construct() {
+        parent::__construct();
+        $this->load->helper(array('form', 'url'));
+        $this->load->library('form_validation');
+        $this->load->model('MworkHistory', 'workHistory');
+        $this->load->helper('file');
+    }
+
+    function index() {
+        
+    }
+
+    function addWorkHistory() {
+        $logged = $this->session->userdata('member_id');
+        if (($logged == FALSE)) {
+            die(json_encode(array('Error' => 404, 'Message' => 'Your session has expired. Please signIn again.')));
+        }
+        if (isset($_POST)) {// if posted with a username, validate login or generate error message
+            if ($this->form_validation->run('addWorkHistory') == FALSE) {
+                die(json_encode(array('Error' => 1, 'Message' => 'Please fill the form properly.')));
+            } else {
+                extract($_POST);
+                $start_date = explode('-', $start_date);
+                $year = $start_date[0];
+                $month = $start_date[1];
+                $day = $start_date[2];
+                $start_date = mktime(0, 0, 0, $month, $day, $year);
+                
+                $end_date = explode('-', $end_date);
+                $year = $end_date[0];
+                $month = $end_date[1];
+                $day = $end_date[2];
+                $end_date = mktime(0, 0, 0, $month, $day, $year);
+                
+                //we save informations in the database
+                $workHistory = $this->workHistory->addWorkHistory($company_name, $company_address, $start_date, $end_date, $job_description, $logged);
+                
+                $workHistories = $this->workHistory->fetchByMemberId($logged);
+                $this->session->set_userdata('workHistories', $workHistories);
+
+                die(json_encode(array('Error' => 0, 'Message' => 'Your Work History has been saved.')));
+            }
+        } else {
+            redirect('/login/workHistory');
+        }
+    }
+
+    function editWorkHistory() {
+        $logged = $this->session->userdata('member_id');
+        if (($logged == FALSE)) {
+            die(json_encode(array('Error' => 404, 'Message' => 'Your session has expired. Please signIn again.')));
+        }
+        if (isset($_POST)) {// if posted with a username, validate login or generate error message
+            if ($this->form_validation->run('addWorkHistory') == FALSE) {
+                die(json_encode(array('Error' => 1, 'Message' => 'Please fill the form properly.')));
+            } else {
+                extract($_POST);
+                $start_date = explode('-', $start_date);
+                $year = $start_date[0];
+                $month = $start_date[1];
+                $day = $start_date[2];
+                $start_date = mktime(0, 0, 0, $month, $day, $year);
+                
+                $end_date = explode('-', $end_date);
+                $year = $end_date[0];
+                $month = $end_date[1];
+                $day = $end_date[2];
+                $end_date = mktime(0, 0, 0, $month, $day, $year);
+                
+                //we save informations in the database
+                $workHistory = $this->workHistory->editWorkHistory($company_name, $company_address, $start_date, $end_date, $job_description, $working_history_id, $logged);
+                
+                $workHistories = $this->workHistory->fetchByMemberId($logged);
+                $this->session->set_userdata('workHistories', $workHistories);
+
+                die(json_encode(array('Error' => 0, 'Message' => 'Your Work History has been updated.')));
+            }
+        } else {
+            redirect('/login/workHistory');
+        }
+    }
+
+    function deleteWorkHistory() {
+        $logged = $this->session->userdata('member_id');
+        if (($logged == FALSE)) {
+            die(json_encode(array('Error' => 404, 'Message' => 'Your session has expired. Please signIn again.')));
+        }
+        if (isset($_POST)) {// if posted with a username, validate login or generate error message            
+            extract($_POST);
+            $listId = explode(',', $listId);
+            foreach ($listId as $working_history_id) {
+                //we delete informations in the database
+                $this->workHistory->deleteWorkHistory($working_history_id, $logged);
+            }
+            //add the delete award to the array of awards already in the session
+            //or recreate the entire session AWARD
+            $personalMessage = 'Work History DELETED!';
+            if(count($listId) > 1)
+                $personalMessage = 'Work History(s) DELETED!';
+            $this->refreshWorkHistoryList($personalMessage);
+        } else {
+            redirect('/login/workHistory');
+        }
+    }
+
+    function refreshWorkHistoryList($personalMessage = null) {
+        $logged = $this->session->userdata('member_id');
+        if (($logged == FALSE)) {
+            die(json_encode(array('Error' => 404, 'Message' => 'Your session has expired. Please signIn again.')));
+        }
+        $workHistories = $this->workHistory->fetchByMemberId($logged);
+        $this->session->set_userdata('workHistories', $workHistories);
+        echo '<table cellpadding="0" cellspacing="0" border="0" class="display" id="workHistoryTableList">
+                    <thead>
+                        <tr>
+                            <th>Company Name</th>
+                            <th>Company Address</th>
+                            <th>Start Date</th>
+                            <th>End Date</th>
+                            <th>Job Description</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tfoot>
+                        <tr>
+                            <th>Company Name</th>
+                            <th>Company Address</th>
+                            <th>Start Date</th>
+                            <th>End Date</th>
+                            <th>Job Description</th>
+                            <th>Action</th>
+                        </tr>
+                    </tfoot>
+                    <tbody>';
+        $array_workHistories = '';
+        foreach ($workHistories as $workHistory) {
+            $javascript_work_history_object = ',{"working_history_id":"' . $workHistory['working_history_id'] . '",
+                                        "company_name":"' . stripslashes($workHistory['company_name']) . '",
+                                        "company_address":"' . stripslashes($workHistory['company_address']) . '",
+                                        "start_date":"' . date('Y-m-d', $workHistory['start_date']) . '",
+                                        "end_date":"' . date('Y-m-d', $workHistory['end_date']) . '",
+                                        "job_description":"' . stripslashes($workHistory['job_description']) . '"}';
+            $array_workHistories .= $javascript_work_history_object;
+
+            echo'    <tr class="gradeA" rel="' . $workHistory['working_history_id'] . '">
+                    <td>' . stripslashes($workHistory['company_name']) . '</td>
+                    <td>' . stripslashes($workHistory['company_address']) . '</td>
+                    <td>' . date('Y-m-d', $workHistory['start_date']) . '</td>
+                    <td>' . date('Y-m-d', $workHistory['end_date']) . '</td>
+                    <td>' . stripslashes($workHistory['job_description']) . '</td>
+                    <td class="center">
+                        <input class="editAward editWorkHistory" id="' . $workHistory['working_history_id'] . '" type="button" value = "Edit" />
+                    </td>
+                </tr>';
+        }
+        $array_workHistories = '[' . substr($array_workHistories, 1) . ']';
+
+        echo '
+    </tbody>
+    </table>
+    <script type="text/javascript">
+        $(function(){        
+            var array_work_histories= ' . $array_workHistories . ';
+            var oTable = $(\'#workHistoryTableList\').dataTable( {
+                "sDom": \'T<"clear">lfrtip\',
+                "oTableTools": {
+                    "sRowSelect": "multi",
+                    "aButtons": [ "select_all", "select_none" ]
+                },
+                "bJQueryUI": true,
+                "sPaginationType": "full_numbers"
+            });
+            $(\'.editWorkHistory\').click(function() { 
+                $(\'#modal_parent_div\').show();
+                $(\'.modal_windows\').hide();
+                $(\'#modal_contener\').show();
+                $(\'#modal_content\').html($(\'#edit_work_history_form_div\').html());
+                $(\'#modal_content form\').attr(\'id\', \'editWorkHistoryForm\');
+                $(\'#modal_content #working_history_id\').val($(this).attr(\'id\'));
+                for(var i=0;i<array_work_histories.length;i++){
+                    if(array_work_histories[i].working_history_id == $(this).attr(\'id\')){
+                        $(\'#edit_company_name\').val(array_work_histories[i].company_name);
+                        $(\'#edit_company_address\').val(array_work_histories[i].company_address);
+                        $(\'#edit_start_date\').val(array_work_histories[i].start_date);
+                        $(\'#edit_end_date\').val(array_work_histories[i].end_date);
+                        $(\'#edit_job_description\').val(array_work_histories[i].job_description);
+                    }
+                }
+            });   
+        });    
+    </script>';
+        if ($personalMessage !== null) {
+            echo '
+                <script type="text/javascript">
+                    $(function(){        
+                        alert("' . $personalMessage . '");
+                    });    
+                </script>';
+        }
+    }
+
+}

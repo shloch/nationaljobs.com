@@ -1,0 +1,28 @@
+/* 
+    Document   : contact
+    Created on : 17 juin 2013, 00:47:21
+    Author     : @shloch, @yousilb
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/* 
+   TODO customize this sample style
+   Syntax recommendation http://www.w3.org/TR/REC-CSS2/
+*/
+
+
+#contactAside{
+    border: 1px solid #C0C0C0;
+    font-size: 0.89em;
+    /*    margin: 0 3px !important;*/
+    margin-top: 1.5%;
+    padding: 1% 4%;
+    /*    border-radius: 1px;
+        border-radius: 1px;
+        border-radius: 1px;*/
+    border-radius: 5px 5px 5px 5px;
+    -moz-border-radius: 5px 5px 5px 5px;
+    -webkit-border-radius: 5px 5px 5px 5px;
+    box-shadow: 0 0 10px rgba(192, 192, 192, 0.7), 0 0 7px rgba(192, 192, 192, 0.7);
+}

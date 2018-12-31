@@ -1,0 +1,427 @@
+/* 
+    Document   : myStyle
+    Created on : Jun 12, 2013, 2:57:46 AM
+    Author     : breezy
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+root { 
+    display: block;
+}
+
+
+body{
+      background-color: whitesmoke;
+}
+
+#globalDiv {
+    /*    border: 1px solid black;*/
+    width: 100%;
+    height: 100%;
+    /*    min-height: 700px;*/
+    font-family: Tahoma,Geneva,sans-serif;
+        font-size: 12px;
+    /*color: rgb(219, 218, 218);*/
+/*    background: none repeat scroll 0% 0% rgb(253, 253, 253);*/
+     background-color: whitesmoke;
+    color: rgb(110, 110, 110);
+}
+
+.cleaner{
+    clear: both;
+}
+
+.heightSpacing{
+    min-height: 7px;
+}
+
+/****inputs**/
+
+/**************header*******/
+#header{
+    min-height: 80%;
+    width: 100%;
+    /*border: 1px solid green;*/
+    float: left;
+    
+}
+
+#jobListButton, #loginButton{
+    float: right;
+    width: 10%;
+    background-color: #0B3054;
+    border: 5px solid white;
+    border-radius: 2px 2px 2px 2px;
+    box-shadow: 0 0 10px 0 #AFE1F5;
+    color: #FDFDFD;
+    padding: 3px 9px;
+    text-align: center;
+}
+
+#miniLogo {
+    /*    border: 1px solid cornflowerblue;*/
+    padding: 0 10px 0 5px;
+    width: 10%;
+    float: left;
+
+}
+#miniLogo img{
+    height: 27px; width: 25px;
+}
+
+#BigJobsUpperText{
+    /*     border: 1px solid blueviolet;*/
+    float: left;
+    width: 10%;
+    height: 27px;
+    padding: 2px 0 0 0;
+    font-weight: bold;
+}
+
+#rubanIcons{
+    width: 85%;
+    float: left;
+    /*    border: 1px solid blueviolet;*/
+}
+
+#rubanIDropDown{
+    width: 14%;
+    float: left;
+    text-align: right;
+    /*    border: 1px solid blueviolet;*/
+}
+
+.searchExemple{
+    color:#bdbdbf;
+}
+
+#IN{
+    width:auto;
+    float: left;
+    /*border: 1px solid green;*/
+    padding: 2.7% 1.5% 0 0;
+    color:  rgb(91, 147, 239);
+    font-weight: bold;
+}
+
+#blackRuban {
+    background-color: black;
+    /*    padding: 5px 10px;*/
+    width: 100%;
+    color: white;
+    float: left;
+}
+
+#paramRuban{
+    background: url('../images/topRubban.jpg') repeat-x center;
+    height:38px;
+    float: left;
+    width: 100%;
+}
+
+#googleForm{
+/*    height:70%;*/
+    float: left;
+    width: 100%;
+    text-align: center;
+}
+
+#googleForm .logo{
+    margin-top: -2%;
+}
+#googleForm .inputs{
+    padding: 2% 0 0 0;
+}
+
+
+#googleForm input[type='text']{
+    width: 85%;
+    height: 27px;
+    /*    border: 1px solid rgb(222, 222, 222);*/
+    border: 1px solid #C0C0C0;
+    margin: 0 3px !important;
+    padding: 5px !important;
+    /*    border-radius: 1px;
+        border-radius: 1px;
+        border-radius: 1px;*/
+    border-radius: 5px 5px 5px 5px;
+    -moz-border-radius: 5px 5px 5px 5px;
+    -webkit-border-radius: 5px 5px 5px 5px;
+    box-shadow: 0 0 10px rgba(192, 192, 192, 0.7), 0 0 7px rgba(192, 192, 192, 0.7);
+}
+
+#googleForm .logo img{
+
+}
+
+.advancedSeartch{
+    text-decoration: underline;
+    color: crimson;
+}
+
+#googleForm input[type='submit']{
+    background-color: #00AFEF;
+    border: 5px solid #006FC0;
+    padding: 5px !important;
+    color: white;
+    border-radius: 5px 5px 5px 5px;
+    -moz-border-radius: 5px 5px 5px 5px;
+    -webkit-border-radius: 5px 5px 5px 5px;
+    /*    height: 27px;*/
+    /*    text-align: center;*/
+}
+
+/********google form home page**********************/
+/*#googleFormHome{
+    height:70%;
+    float: left;
+    width: 100%;
+    text-align: center;
+}
+
+#googleFormHome .logo{
+    margin-top: -2%;
+}
+#googleFormHome .inputs{
+    padding: 2% 0 0 0;
+}
+
+#googleFormHome input{
+    width: 85%;
+    height: 27px;
+    border: 1px solid rgb(222, 222, 222);
+    border-radius: 1px;
+    border-radius: 1px;
+    border-radius: 1px;
+}
+
+#googleFormHome .logo img{
+    
+}*/
+/**********************end google form home pqge************/
+
+#logoCaption{
+    /*font-family:*/   /* to be changed*/
+    font-style: italic;
+    color: rgb(91, 147, 239);
+    font-size: 0.85em;
+}
+
+
+#topSeparator{
+    /*background-color: black;*/
+    /*    border: 10px solid black;
+        box-shadow: 5px 5px 0px 5px;
+        -moz-box-shadow: 10px;*/
+    background: url('../images/blackRubanShaddow.png') repeat-x center;
+    height: 16px;
+}
+
+.topBlocks{
+    /*border: 1px solid orange;*/
+    width: 15.14%;
+    float: left;
+/*    margin-right:1%;*/
+    padding: 0 0 1% 0;
+}
+/************middle************************/
+#middle{
+    min-height: 80%;
+    width: 100%;
+    /*border: 1px solid red;*/
+
+}
+
+.deadline{
+    color: crimson;
+}
+
+.apply, .SHARE{
+    color: #006FC0;
+}
+
+#profile{
+    width: 14%;
+    float: left;
+    /*border: 1px solid black;*/
+    padding-right: 1%;
+    padding-top: 2%;
+
+}
+
+#searchCaptionText h2{
+    color: #1086E0;
+    text-align: center;
+}
+
+#searchResult{
+    /*border: 1px solid black;*/
+    float: left;
+    width: 55%;
+    margin-left: 1%;
+}
+
+
+
+#searchParam{
+    width: 27%;
+    float: left;
+    padding-top: 2%;
+    /*border: 1px solid black;*/
+    /*margin-right: 0;*/
+    margin-left: 1%;
+}
+
+.result{
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px dotted rgb(206, 212, 220);
+}
+
+.result img{
+    float: left;
+    margin-right: 15px;
+    border: 3px solid rgb(255, 255, 255);
+    /*overflow: visible;*/
+}
+
+.resultInfos .jobdetails{
+    color: rgb(91, 147, 239);
+}
+
+.resultInfos .jobdetailsAdditional{
+    color:  rgb(0, 153, 0);
+}
+
+.resultImg, .resultInfos{
+    float: left;
+}
+
+#searchSorting{
+    /*    border: 1px solid green;*/
+    /*    padding: 2.9% 0 0 0;*/
+
+    /*     width: 85%;*/
+    /*    height: 27px;*/
+    /*    border: 1px solid rgb(222, 222, 222);*/
+    border: 1px solid #C0C0C0;
+    /*    margin: 0 3px !important;*/
+    margin-top: 1.5%;
+    text-align: center;
+    /*    border-radius: 1px;
+        border-radius: 1px;
+        border-radius: 1px;*/
+    border-radius: 5px 5px 5px 5px;
+    -moz-border-radius: 5px 5px 5px 5px;
+    -webkit-border-radius: 5px 5px 5px 5px;
+    box-shadow: 0 0 10px rgba(192, 192, 192, 0.7), 0 0 7px rgba(192, 192, 192, 0.7);
+}
+
+#newsletter input[name="searchWords"]{
+    background: none repeat scroll 0 0 #CADCFB;
+    width: 70%;
+    border: 1px solid #5B93EF;
+    padding: 5px 0;
+}
+
+#searchSorting select{
+    width: 90%;
+    border: 1px solid #DEDEDE;
+    color: #6E6E6E;
+    height: 30px;
+    /*    padding: auto 0;*/
+    /*    text-align: center;*/
+    -moz-border-radius :10px; 
+    -webkit-border-radius :10px; 
+}
+
+#searchSorting  input:hover, #searchSorting select:hover,
+#searchSorting input:focus, #searchSorting select:focus {
+	border:1px solid #c0c0c0;
+	background-color: #ffffe0;
+}
+/*************footer*************/
+#footer{
+    min-height: 80%;
+    width: 100%;
+    /*border: 1px solid greenyellow;*/
+    background-color: black;
+    float: left;
+    margin: auto;
+}
+
+.bottomBlocks{
+    /*border: 1px solid orange;*/
+    width: 18.5%;
+    float: left;
+    margin-right:1%;
+}
+
+.bottomBloacksHeader{
+    border-bottom: 1px solid white;
+    padding: 2px 4px;
+    font-weight: bold;
+}
+
+.bottomBloacksContent{
+    background: none repeat scroll 0% 0% rgb(246, 243, 243);
+    margin: 5px 0px;
+}
+
+.bottomBloacksContent a, .bottomBloacksContent a:visited{
+    color: rgb(91, 147, 239);
+    text-decoration: none;
+}
+
+.bottomBloacksContent a:hover {
+    color: rgb(91, 147, 239);
+    text-decoration: underline;
+}
+
+/****** PAGINATION*************/
+.paginate {
+    font-family:Arial, Helvetica, sans-serif;
+    padding: 3px;
+    margin: 3px;
+}
+
+.paginationTable{
+    background-color: rgb(91, 147, 239);
+}
+
+.paginate a {
+    padding:2px 5px 2px 5px;
+    margin:2px;
+    border:1px solid #1D1D1D;
+    text-decoration:none;
+    color: #1D1D1D;
+}
+.paginate a:hover, .paginate a:active {
+    border: 1px solid #1D1D1D;
+    color: #000;
+}
+.paginate span.current {
+    margin: 2px;
+    padding: 2px 5px 2px 5px;
+    border: 1px solid #999;
+
+    font-weight: bold;
+    background-color: #999;
+    color: #FFF;
+}
+.paginate span.disabled {
+    padding:2px 5px 2px 5px;
+    margin:2px;
+    border:1px solid #eee;
+    color:#DDD;
+}
+
+/*	li{
+                padding:4px;
+                margin-bottom:3px;
+                background-color:#FCC;
+                list-style:none;}
+                
+        ul{margin:6px;
+        padding:0px;}	*/

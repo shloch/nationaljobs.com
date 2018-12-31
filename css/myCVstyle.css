@@ -1,0 +1,104 @@
+/* 
+    Document   : myCVstyle
+    Created on : Sep 15, 2013, 7:54:31 AM
+    Author     : chris
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+root { 
+    display: block;
+}
+.cleaner {
+clear: both;
+}
+
+a.googleButton{
+    color: #6e6e6e;
+    font: bold 12px Helvetica, Arial, sans-serif;
+    text-decoration: none;
+    padding: 7px 12px;
+    position: relative;
+    display: inline-block;
+    text-shadow: 0 1px 0 #fff;
+    -webkit-transition: border-color .218s;
+    -moz-transition: border .218s;
+    -o-transition: border-color .218s;
+    transition: border-color .218s;
+    background: #f3f3f3;
+    background: -webkit-gradient(linear,0% 40%,0% 70%,from(#F5F5F5),to(#F1F1F1));
+    background: -moz-linear-gradient(linear,0% 40%,0% 70%,from(#F5F5F5),to(#F1F1F1));
+    border: solid 1px #dcdcdc;
+    border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    margin-right: 10px;
+    font-size: 16px;
+    padding: 10px 15px;
+}
+h1{
+    margin-bottom: 0px;
+}
+
+hr {
+    border: 1px dotted rgb(206, 212, 220);
+/*    border-color: rgb(206, 212, 220);*/
+}
+
+div[class="child"]{
+    margin-bottom: 15px;
+}
+
+div#personalInfos{
+    min-height: 2%;
+}
+
+.Name{
+    font-size: 1.4567em;
+}
+
+div[id="cvPicture"]{
+/*    border: 1px solid #0055BB;*/
+    float: left;
+    width: 20%;
+    margin-left:20%;
+}
+
+div[id="adresses"]{
+/*    border: 1px solid #333;*/
+    float: left;
+    width: 39%;
+    padding-left: 20px;
+}
+
+div[id="educationHis"]{
+/*    border: 1px solid #B0BED9;*/
+
+    overflow: hidden;
+padding-left: 10%;
+}
+
+div[id="workHis"]{
+/*    border: 1px solid #0055BB;*/
+    padding-left: 10%;
+}
+
+div[id="proffTraining"]{
+/*    border: 1px solid lightcoral;*/
+padding-left: 10%;
+}
+
+div[id="awards"]{
+/*    border: 1px solid orchid;*/
+padding-left: 10%;
+}
+
+div[id="skills"]{
+/*    border: 1px solid yellowgreen;*/
+padding-left: 10%;
+}
+
+div[id="references"]{
+/*    border: 1px solid lightslategray;*/
+padding-left: 10%;
+}

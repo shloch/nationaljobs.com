@@ -1,0 +1,301 @@
+/* 
+    Document   : myStyle
+    Created on : Jun 12, 2013, 2:57:46 AM
+    Author     : breezy
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+root { 
+    display: block;
+}
+
+.validInput{
+    color: green;
+    display: block;
+    font-size: 0.64em;
+    font-style: italic;
+    padding-left: 15%;
+}
+
+a.googleButton{
+    color: #6e6e6e;
+    font: bold 12px Helvetica, Arial, sans-serif;
+    text-decoration: none;
+    padding: 7px 12px;
+    position: relative;
+    display: inline-block;
+    text-shadow: 0 1px 0 #fff;
+    -webkit-transition: border-color .218s;
+    -moz-transition: border .218s;
+    -o-transition: border-color .218s;
+    transition: border-color .218s;
+    background: #f3f3f3;
+    background: -webkit-gradient(linear,0% 40%,0% 70%,from(#F5F5F5),to(#F1F1F1));
+    background: -moz-linear-gradient(linear,0% 40%,0% 70%,from(#F5F5F5),to(#F1F1F1));
+    border: solid 1px #dcdcdc;
+    border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    margin-right: 10px;
+    font-size: 16px;
+    padding: 10px 15px;
+}
+
+
+span[class="error"]{
+    /*float:left;*/
+    display: block;
+    color:#ff3366;
+    font-size: 0.64em;
+    font-style: italic;
+    padding-left: 15%;
+}
+
+h5[class="error"]{
+    display: block;
+    color:#ff3366;
+    /*font-size: 0.64em;*/
+    font-style: italic;
+    padding-left: 25%;
+}
+h5[class="success"]{
+    display: block;
+    color:green;
+    /*font-size: 0.64em;*/
+    font-style: italic;
+    padding-left: 25%;
+}
+
+
+body{
+    border: 0;	
+    margin: 0;
+    padding: 0;
+
+}
+
+
+#globalDiv {
+    /*    border: 1px solid black;*/
+    width: 100%;
+    height: 100%;
+    /*    min-height: 700px;*/
+    font-family: Tahoma,Geneva,sans-serif;
+    /*    font-size: 11px;*/
+    /*color: rgb(219, 218, 218);*/
+    background: none repeat scroll 0% 0% rgb(253, 253, 253);
+    color: rgb(110, 110, 110);
+}
+
+.cleaner{
+    clear: both;
+}
+
+.heightSpacing{
+    min-height: 7px;
+}
+
+/**************header*******/
+#header{
+    min-height: 20%;
+    width: 100%;
+    /*border: 1px solid green;*/
+    float: left;
+}
+
+
+#miniLogo {
+    /*    border: 1px solid cornflowerblue;*/
+    padding: 0 10px 0 5px;
+    width: 10%;
+    float: left;
+
+}
+#miniLogo img{
+    height: 27px; width: 25px;
+}
+
+#BigJobsUpperText{
+    /*     border: 1px solid blueviolet;*/
+    float: left;
+    width: 10%;
+    height: 27px;
+    padding: 2px 0 0 0;
+    font-weight: bold;
+}
+
+#rubanIcons{
+    width: 85%;
+    float: left;
+    /*    border: 1px solid blueviolet;*/
+}
+
+#rubanIDropDown{
+    width: 14%;
+    float: left;
+    text-align: right;
+    /*    border: 1px solid blueviolet;*/
+}
+
+.searchExemple{
+    color:#bdbdbf;
+}
+
+#IN{
+    width:auto;
+    float: left;
+    /*border: 1px solid green;*/
+    padding: 2.7% 1.5% 0 0;
+    color:  rgb(91, 147, 239);
+    font-weight: bold;
+}
+
+#blackRuban {
+    background-color: black;
+    /*    padding: 5px 10px;*/
+    width: 100%;
+    color: white;
+    float: left;
+}
+
+#paramRuban{
+    background: url('../images/topRubban.jpg') repeat-x center;
+    height:38px;
+    float: left;
+    width: 100%;
+}
+
+
+/**********************end google form home pqge************/
+
+#logoCaption{
+    /*font-family:*/   /* to be changed*/
+    font-style: italic;
+    color: rgb(91, 147, 239);
+    font-size: 0.85em;
+}
+
+
+#topSeparator{
+    /*background-color: black;*/
+    /*    border: 10px solid black;
+        box-shadow: 5px 5px 0px 5px;
+        -moz-box-shadow: 10px;*/
+    background: url('../images/blackRubanShaddow.png') repeat-x center;
+    height: 16px;
+}
+
+.topBlocks{
+    /*border: 1px solid orange;*/
+    width: 18.14%;
+    float: left;
+    margin-right:1%;
+    padding: 0 0 1% 0;
+}
+/************middle************************/
+#middle{
+    min-height: 80%;
+    width: 100%;
+    /*border: 1px solid red;*/
+    background-color: whitesmoke;
+
+}
+
+
+#searchCaptionText h2{
+    color: #1086E0;
+    text-align: center;
+}
+
+#content{
+    border: 1px solid #6E6E6E;
+    /*float: left;*/
+    width: 75%;
+    margin: auto;
+    padding: 5px 5px;
+
+}
+
+#content a{
+    color: #1086E0;
+    text-decoration: none;
+}
+
+#content a:hover{
+    text-decoration: underline;
+}
+
+#content li {
+    background: url("../images/list.png") no-repeat scroll 0 7px transparent;
+    color: #636363;
+    margin: 0 0 5px;
+    padding: 0 0 0 15px;
+}
+
+#content ul {
+    list-style: none outside none;
+}
+
+
+
+/*************footer*************/
+#footer{
+    min-height: 80%;
+    width: 100%;
+    /*border: 1px solid greenyellow;*/
+    background-color: black;
+    float: left;
+    margin: auto;
+}
+
+.bottomBlocks{
+    /*border: 1px solid orange;*/
+    width: 18.5%;
+    float: left;
+    margin-right:1%;
+}
+
+.bottomBloacksHeader{
+    border-bottom: 1px solid white;
+    padding: 2px 4px;
+    font-weight: bold;
+}
+
+.bottomBloacksContent{
+    background: none repeat scroll 0% 0% rgb(246, 243, 243);
+    margin: 5px 0px;
+}
+
+.bottomBloacksContent a, .bottomBloacksContent a:visited{
+    color: rgb(91, 147, 239);
+    text-decoration: none;
+}
+
+.bottomBloacksContent a:hover {
+    color: rgb(91, 147, 239);
+    text-decoration: underline;
+}
+
+.loaderImageContener{
+    text-align: center;
+}
+.greenText{
+    color: green
+}
+.redText{
+    color:red
+}
+.hidden{
+    display: none;
+/*    color : yellow;*/
+    margin-top: -7%;
+}
+.error2{
+    /*float:left;*/
+    display: block;
+    color:#ff3366;
+    font-size: 0.64em;
+    font-style: italic;
+    padding-left: 15%;
+}

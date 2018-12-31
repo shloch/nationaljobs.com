@@ -1,0 +1,81 @@
+table.display {
+   color: gray; 
+   border: 1px solid #d3d3d3; 
+}
+table.display td{
+   border-right: 1px solid #d3d3d3; 
+}
+.DTTT_container .ui-button {
+    margin-left: 10px;
+    margin-right: -.3em;
+}
+
+.dataTables_filter{
+   margin-bottom: 5px; 
+}
+
+.paging_full_numbers{
+   margin-top: 5px;
+   width: 393px !important; 
+}
+#tableListeBienService_info{
+  color: #666;  
+}
+.ui-widget input, .ui-widget select, .ui-widget textarea, .ui-widget button{
+    color: gray;
+    border: 1px solid #DDD;
+}
+.ui-widget input, .ui-widget select, .ui-widget textarea, .ui-widget button{
+   border: 1px solid #DDD; 
+}
+
+table.display tr.odd {
+background-color: #f4f2e4;
+}
+table.display tr.odd td.sorting_1 {
+background-color: #f4f2e4;
+}
+table.display tr.even td.sorting_1{
+  background-color: white;  
+}
+table.display .ui-state-default {
+  background: inherit; 
+  background-color: #F9F6F1; 
+}
+.dataTables_wrapper button.DTTT_button:hover, .dataTables_wrapper div.DTTT_button:hover, .dataTables_wrapper a.DTTT_button:hover{
+    border:1px solid #d3d3d3;
+    color:#666 ;
+    font-weight: bold;
+}
+#ctneurFiltreExportation_ListLotTicket label{
+   font-weight: bold; 
+}
+.dataTables_length label{
+    color:#666 ;
+    font-weight: bold;  
+}
+.dataTables_filter label{
+    color:#666 ;
+    font-weight: bold; 
+}
+#cteneur_tableListeLotTicket table.dataTable tr.DTTT_selected.even{
+    background-color: rgb(238, 235, 212);
+}
+table.dataTable tr.DTTT_selected.even{
+    background-color: rgb(238, 235, 212);
+}
+table.dataTable tr.DTTT_selected.even td.sorting_1{
+    background-color: rgb(238, 235, 212); 
+}
+table.dataTable tr.DTTT_selected.odd{
+    background-color: rgb(238, 235, 212);
+}
+table.dataTable tr.DTTT_selected.odd td.sorting_1{
+   background-color: rgb(238, 235, 212);
+}
+
+table.dataTable,  table.dataTable a{
+    font-size: 12px;
+    color: gray;
+    font-weight: normal;
+}

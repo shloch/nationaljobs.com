@@ -1,0 +1,9 @@
+[02-Sep-2013 13:34:53 America/New_York] PHP Parse error:  syntax error, unexpected '[' in /home/national/public_html/application/controllers/jobSearch.php on line 46
+[05-Sep-2013 09:58:06 America/New_York] PHP Parse error:  syntax error, unexpected T_CONSTANT_ENCAPSED_STRING, expecting ',' or ';' in /home/national/public_html/application/views/template2.php on line 182
+[05-Sep-2013 10:08:11 America/New_York] PHP Parse error:  syntax error, unexpected T_STRING, expecting ',' or ';' in /home/national/public_html/application/views/welcome.php on line 129
+[05-Sep-2013 10:08:34 America/New_York] PHP Parse error:  syntax error, unexpected T_CONSTANT_ENCAPSED_STRING, expecting ',' or ';' in /home/national/public_html/application/views/template2.php on line 182
+[05-Sep-2013 10:12:41 America/New_York] PHP Parse error:  syntax error, unexpected T_STRING, expecting ',' or ';' in /home/national/public_html/application/views/welcome.php on line 129
+[05-Sep-2013 10:14:09 America/New_York] PHP Parse error:  syntax error, unexpected T_STRING, expecting ',' or ';' in /home/national/public_html/application/views/welcome.php on line 129
+[05-Sep-2013 10:14:34 America/New_York] PHP Parse error:  syntax error, unexpected T_STRING, expecting ',' or ';' in /home/national/public_html/application/views/welcome.php on line 129
+[05-Sep-2013 10:19:40 America/New_York] PHP Parse error:  syntax error, unexpected T_STRING, expecting ',' or ';' in /home/national/public_html/application/views/welcome.php on line 129
+[05-Sep-2013 10:20:11 America/New_York] PHP Parse error:  syntax error, unexpected T_STRING, expecting ',' or ';' in /home/national/public_html/application/views/welcome.php on line 129
